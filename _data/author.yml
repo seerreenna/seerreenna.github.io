@@ -1,0 +1,23 @@
+name: Serena Alvarez
+dp: https://avatars.githubusercontent.com/u/77417563?v=4
+description: "
+  <p>
+    Welcome to Serena's Blog! A compilation of various data science endeavours...
+  </p>
+  <br/>
+  <p>
+    Analyzing stuff that intrests me...
+  </p>
+  <br/>
+  <p>
+    Developed using GitHub Pages, and Jekylll using theme by <a href='https://github.com/sharadcodes' target='_blank'>sharadcodes</a>
+  </P>
+"
+email: serenaealvarez@gmail.com
+contact:
+  - title: linkedin
+    url: https://www.linkedin.com/in/serenaealvarez/
+  - title: github
+    url: https://github.com/seerreenna
+  - title: email
+    url: mailto:serenaealvarez@gmail.com

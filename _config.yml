@@ -1,24 +1,26 @@
+title: Serena's Blog
+markdown: kramdown
+
+# for atom feed
+author:
+  name: Serena Alvarez
+  email: serenaealvarez@gmail.com
+
+plugins:
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+collections_dir: all_collections
 collections:
-  authors:
+  posts:
     output: true
 
 defaults:
   - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
+      path: "_posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+      permalink: /posts/:title/
+exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]
