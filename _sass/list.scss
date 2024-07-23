@@ -55,3 +55,9 @@ ul.horizontal-list {
     }
   }
 }
+
+
+/* Adjust text color for list items */
+ul, ol {
+  color: inherit; /* Inherit the body text color */
+}

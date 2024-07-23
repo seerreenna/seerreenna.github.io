@@ -71,3 +71,9 @@
 .highlight .vi { color: #f2777a } /* Name.Variable.Instance */
 .highlight .vm { color: #f2777a } /* Name.Variable.Magic */
 .highlight .il { color: #f99157 } /* Literal.Number.Integer.Long */
+
+/* Adjust text color for code blocks */
+code, pre {
+    color: inherit; /* Inherit the body text color */
+  }
+  
