@@ -1,0 +1,63 @@
+---
+---
+.projects-container {
+    margin: 20px 0;
+  }
+  
+  .project-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    width: calc(33.333% - 20px); // Adjust based on desired margins and total width
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: white;
+    text-align: center;
+    display: inline-block; // Ensure this is not overridden to be something else
+  }
+  
+
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #fea1d1; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #fe46a5; 
+}
+
+.home-image {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+.home-profile-image {
+    width: 100px;  // Small size for minimalism
+    height: 100px;  // Ensure the height matches the width for a perfect circle
+    border-radius: 50%;  // Circular shape
+    object-fit: cover;  // Ensures the image fills the area without distortion
+    display: block;
+    margin: 10px auto;  // Center the image horizontally
+    border: 3px solid #f2f2f2;  // Optional: light border to enhance visibility on various backgrounds
+  }
+  
+    
+  
