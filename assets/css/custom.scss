@@ -59,5 +59,120 @@
     border: 3px solid #f2f2f2;  // Optional: light border to enhance visibility on various backgrounds
   }
   
-    
+
+  img.heart-shape {
+    width: 300px;  /* Increased size */
+    height: 300px; /* Ensure the height matches the width */
+    aspect-ratio: 1;
+    object-fit: cover;
+    --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+    -webkit-mask-box-image: var(--_m);
+    mask-border: var(--_m);
+    clip-path: polygon(-41% 0,50% 91%, 141% 0);
+    display: block;  /* Added to help with centering */
+    margin: 0 auto;  /* Center the image */
+  }
   
+  @supports not (-webkit-mask-box-image: var(--_m)) { 
+    img.heart-shape {
+      --_m:
+        radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
+        radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
+        linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+      -webkit-mask: var(--_m);
+      mask: var(--_m);
+    }
+  }
+
+  .card {
+    padding: 0.5em;
+    border: 1px var(--text) solid;
+    width: calc(100% - 2em);
+    max-width: 100%;
+    font-size: 1.25em;
+    align-items: flex-start;
+    background-color: var(--bg-secondary);
+    margin-bottom: 0.8em;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .card .header {
+    color: var(--links);
+    font-weight: bold;
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    font-size: 1.25em;
+  }
+  
+  .card .body {
+    font-size: 1em;
+    text-align: left;
+    margin-top: 2.5em;
+  }
+  
+  .card hr {
+    display: none;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      width: calc(100% - 2em);
+      display: block;
+      margin-bottom: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      a, .header {
+        font-size: 1em;
+      }
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  .download-button {
+    display: block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    background-color: var(--subheading3);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  img.heart-shape {
+    width: 300px;
+    height: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+    -webkit-mask-box-image: var(--_m);
+    mask-border: var(--_m);
+    clip-path: polygon(-41% 0,50% 91%, 141% 0);
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+  }
+  
+  img.heart-shape:hover {
+    content: url(/assets/images/fav_poke.png);
+  }
+
+
+
+
