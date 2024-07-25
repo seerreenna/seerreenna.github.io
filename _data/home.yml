@@ -31,7 +31,7 @@ old_project_entries:
     desc: Undertsanding the impact of Summarization for the improvement of Topic Modeling using LDA. Completed in Python. 
 
   - title: Predicting Household Utility Usage with Generalized Boosted Regression Modeling (GBM)
-    url: assets/files/Econ128_Presentation.pptx
+    url: assets/files/Econ128_Presentation.pdf
     desc: Used Generalized Boosted Regression Modeling (GBM) to predict household energy usage based on demographic and consumption data.
 
 
