@@ -1,14 +1,17 @@
-title: Serena Alvarez's Data Science Portfolio!
+title: Serena Elizabeth Alvarez ❀ 
+subtitle: Data Scientist
 author: Serena Alvarez
 #url: https://www.abhinavsaxena.com/moonwalk # root address of the site
 description: > # description of the site (multiple lines allowed)
-  Hi, Welcome to my Portfolio! My name is Serena and I have experience in the Defense, Technology, and Food Distribution industries and am set to complete my MDS degree from UCI in December 2024. My interests include Technology, Sports, and International Relations. Please enjoy!
+  Hi! I'm Serena, a Data Scientist based in Irvine, CA with experience in the Defense, Technology, and Food Distribution industries. I enjoy piecing together small bits of information to gain a better perspective on the world at large. My favorite areas to analyze are Technology, Sports, and International Relations.
+
+  Check out my projects below or my blog in the navigation bar above!  
 permalink: /:slug
 
-favicon: "./logo.png" # relative path to site's favicon
+favicon: "./logo.png" 
 
 twitter:
-    username: dataserenaa # update or delete this
+    username: dataserenaa 
     card: summary_large_image
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
@@ -30,16 +33,19 @@ theme_config:
   show_old_projects: true # show old projects as cards, add in _data/home.yml
   show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
   show_reading_time: true # show number of words and reading time in the blog posts
-  show_tags: true # show tags in a blog posts
+  show_tags: false # show tags in a blog posts
   # options for "home" page
   home:
-    title_projects: Data Analysis and Exploration
+    title_projects: Data Analysis & Exploration
     title_old_projects: AI/ Machine Learning Modeling
-    title_old_projects2: Data Engineering/ Tooling
+    title_old_projects2: Data Engineering & Tooling
     title_misc_list: Miscellaneous
     title_blog: Blog
     
-    
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 soopr:
   publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options

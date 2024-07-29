@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Projects"
+---
+<a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+
+<header>
+  <h1>My Projects &#x2765</h1>
+</header>
+
+<div class="projects-list">
+  {% for project in site.projects %}
+    <div class="project">
+      <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+      <p>{{ project.overview }}</p>
+    </div>
+  {% endfor %}
+</div>
+<footer>
+  <div class="dashed"></div>
+  {% include horizontal_list.html collection=site.data.home.footer_entries %}
+</footer>

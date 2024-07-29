@@ -68,23 +68,7 @@ footer_entries:
   - title: email
     url: mailto:serenaealvarez@gmail.com 
 
-misc_entries:
 
-  - title: Tech Stack
-    url: false
-    entries:
-      - title: Programming Languages
-        url: false
-        entries:
-          - title: R, Python, Apache Spark, MySQL, Matlab
-            url: false
-            
-
-      - title: Tooling
-        url: false
-        entries: 
-          - title: Google Cloud Platform, Unix/ Linux, Git/ Github
-            url: false
 
 
 

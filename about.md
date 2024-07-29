@@ -1,66 +1,107 @@
 ---
-layout: post
-title: About Me - Serena Alvarez
+layout: aboutme
+title: Learn More About Me!
 permalink: /about/
 ---
 
 [Download Resume](/assets/files/Serena_Alvarez_Resume.pdf){: class="download-button"}
 
-Hi, I'm **Serena Alvarez**, an aspiring Data Scientist pursuing a Master's degree at the University of California, Irvine. I enjoy gaining a greater understanding of how the world works, and data is a great medium to deduce the truths. 
+Hi! I'm **Serena**, a Data Scientist based in **Irvine, CA**. I'm a quick learner with experience in areas like Statistical Analysis, Cloud Computing, ETL, Signal Processing, and Research.
 
-<div class="container">
+Please feel free to download my resume above and check out an overview of my career as a data scientist below.
+
+(P.S. If you would like to switch themes, click on the pokeball in the right corner!!)
+
+<style>
+.card .title {
+   color: var(--headings);
+    text-align: center;
+    font-weight: bold;
+    position: static;
+    top: 0.5em;
+    left: 0.5em;
+    font-size: 2em;
+}
+</style>
 
 <div class="card">
-<h2 class="header">Education</h2>
+<h1 class="title">Serena as a Data Scientist</h1>
 <div class="body">
 <ul>
-  <li><strong>Master's of Data Science</strong>, University of California, Irvine, Expected Dec 2024</li>
-  <li><strong>B.A. Quantitative Economics</strong>, University of California, Irvine, Jun 2022</li>
+  If you ever asked "Who is Serena as a Data Scientist?", then this section is for you. 
+</ul>
+
+<div class="card">
+<h1 class="header">Education</h1>
+<div class="body">
+<ul>
+  <li><strong>Master's of Data Science</strong>, University of California, Irvine</li> <em>  Expected Dec 2024</em>
+  <li><strong>B.A. Quantitative Economics</strong>, University of California, Irvine</li> <em>  Jun 2022</em>
 </ul>
 </div>
 </div>
 
 <div class="card">
-<h2 class="header">Professional Experience</h2>
+<h1 class="header">Experience</h1>
 <div class="body">
-<h3>Electronic Warfare Associates (EWA), Herndon, VA</h3>
+<h4>Electronic Warfare Associates (EWA), Herndon, VA</h4>
 <ul>
-  <li><strong>R&D Intern, Machine Learning / AI</strong> (June 2022 - Present)</li>
+  <li><strong>R&D Intern, Machine Learning / AI</strong> (Jun 2022 - Jan 204)</li>
+  <li><strong>Graduate R&D Intern, Machine Learning / AI</strong> (Jan 2024 - Present)</li>
 </ul>
 </div>
 </div>
 
 <div class="card">
-<h2 class="header">Core Skills</h2>
+<h1 class="header">Tech Stack</h1>
 <div class="body">
 <ul>
   <li><strong>Programming</strong>: Python, R, SQL</li>
   <li><strong>Tools</strong>: TensorFlow, Pytorch, Docker, Git/Github, Apache Spark, GCP</li>
-  <li><strong>Analysis</strong>: Time Series Analysis, Econometric Analysis, Data Visualization</li>
+  <li><strong>Analysis</strong>: Time Series Analysis, Econometric Analysis, Bayesian Analysis</li>
 </ul>
 </div>
 </div>
 
 <div class="card">
-<h2 class="header">Leadership</h2>
+<h1 class="header">Leadership</h1>
 <div class="body">
 <ul>
-  <li><strong>MDS Program Ambassador</strong>: Advocate for student engagement and interdisciplinary collaboration.</li>
-  <li><strong>Co-Founder & Vice President, The Futurist Society at UCI</strong>: Led discussions and workshops on emerging technologies.</li>
+  <li><strong>MDS Program Ambassador</strong>: Act as an advocate for the MDS program in the Donald Bren School of Information and Computer Sciences. Aim to solidify program systems, activities, and standards by understanding the needs of the diverse student body. </li>
+  <li><strong>Co-Founder & Vice President, The Futurist Society at UCI</strong>: Compiled research for weekly discussions on the latest technological innovations. Led insightful debates on topics such as Quantum Computing, Circular Economies, and the Dyson Sphere.</li>
 </ul>
 </div>
 </div>
 
 <div class="card">
-<h2 class="header">Please Contact Me!</h2>
+<h1 class="header">Intrests & Passions</h1>
 <div class="body">
 <ul>
-  <li><strong>Email</strong>: [Personal](mailto:serenaealvarez@gmail.com), [Work](mailto:sealvare@uci.edu)</li>
-  <li><strong>LinkedIn</strong>: [linkedin.com/in/serenaealvarez](https://www.linkedin.com/in/serenaealvarez)</li>
+  <h4>Intrests: </h4>
+  <ul>
+    <li>I have a very strong intrest in innovation and engineering solutions, so naturally I am very interested in <em>Artificial Intelligence and Machine Learning</em>. Read more on my intrest in ML/AI <a href= "/coming-soon" >here</a>. </li>
+    <li>Additioanlly with my background in econometrics, I enjoy analyzing the world in a "bigger picture" way by asking difficult questions. </li>
+  </ul>
+  <ul>
+  <h4>Passions:</h4>
+    <li><em>Learning</em> is one of my biggest passions- I live for the feeling of my worldview completely changing with new information. With each nuance, I aim to understand the world around me to the fullest extent.</li>
+    <li>On the more personal side, I enjoy watching and anlyzing basketball (Go Clippers!), optimizing my skincare routine, and playing various video games (see the pokeball toggle and slowpoke above).</li>
+  </ul>
 </ul>
 </div>
 </div>
 
 </div>
+</div>
+
+# Please Contact Me!
+Email: [Personal](mailto:serenaealvarez@gmail.com), [School](mailto:sealvare@uci.edu)
 
 
+LinkedIn: [linkedin.com/in/serenaealvarez](https://www.linkedin.com/in/serenaealvarez)
+
+
+<footer>
+  <div class="dashed"></div>
+  {% include horizontal_list.html collection=site.data.home.footer_entries %}
+</footer>
