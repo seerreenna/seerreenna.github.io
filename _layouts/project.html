@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="/assets/css/custom.css">
+<script src="/assets/js/custom.js" defer></script>
+
+<a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
+<h1 class="project-title">{{ page.title }}</h1>
+{% include date_and_social_share.html %}
+{{ content }}
+
+
+<footer>
+  <div class="dashed"></div>
+  {% include horizontal_list.html collection=site.data.home.footer_entries %}
+</footer>
+

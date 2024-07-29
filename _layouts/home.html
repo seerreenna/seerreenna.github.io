@@ -7,12 +7,16 @@ layout: default
     {% include horizontal_list.html collection=site.data.home.navbar_entries %}
     <div class="dashed"></div>
   {% endif %}
-  
-  <h1>{{ site.title }}</h1>
+ 
+
+  <h1 style="margin-bottom: 0;">{{ site.title }}
+  <h3 style="margin-top: 0;" align="justify">{{ site.subtitle }}</h3></h1>
   <div class="home-intro">
     <div class="home-text">
       {% if site.theme_config.show_description == true %}
-        <p>{{ site.description }}</p>
+        <p>Hi! I'm <strong>Serena</strong>, a Data Scientist based in <strong>Irvine, CA</strong> with experience in the Defense, Technology, and Food Distribution industries. I enjoy piecing together small bits of information to gain a better perspective on the world at large. My favorite topics to analyze are Technology, Sports, and International Relations.
+          
+          
       {% endif %}
     </div>
     {% if site.data.home.image %}
@@ -21,6 +25,8 @@ layout: default
       </div>
     {% endif %}
   </div>
+
+ <div class="home-text" >Check out some of my projects below or <a href="/blog" target="_self">my blog</a>!</div>
 </header>
 
 {{ content }}
