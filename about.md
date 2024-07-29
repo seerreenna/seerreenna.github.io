@@ -4,11 +4,19 @@ title: Learn More About Me!
 permalink: /about/
 ---
 
+<div class="card">
+<div class="body">
+
+I began my data science journey in 2019 when I was first introduced to R during my statistics lecture. It sparked my curiosity and soon I began self-teaching myself and became fluent in R. Soon after, I taught myself Python. Today, I am well on my path into data science and, my curiosity still remains strong.
+<div></div>
+<br> I'm a quick learner with experience in many areas such as Statistical Analysis, Cloud Computing, ETL, Signal Processing, and Research.
+<div></div>
+<br>Please feel free to check out my resume and an overview of my career as a data scientist below.
+
+
+</div>
+</div>
 [Download Resume](/assets/files/Serena_Alvarez_Resume.pdf){: class="download-button"}
-
-Hi! I'm **Serena**, a Data Scientist based in **Irvine, CA**. I'm a quick learner with experience in areas like Statistical Analysis, Cloud Computing, ETL, Signal Processing, and Research.
-
-Please feel free to download my resume above and check out an overview of my career as a data scientist below.
 
 (P.S. If you would like to switch themes, click on the pokeball in the right corner!!)
 
@@ -74,18 +82,18 @@ Please feel free to download my resume above and check out an overview of my car
 </div>
 
 <div class="card">
-<h1 class="header">Intrests & Passions</h1>
+<h1 class="header">Interests & Passions</h1>
 <div class="body">
 <ul>
-  <h4>Intrests: </h4>
+  <h4>Interests: </h4>
   <ul>
-    <li>I have a very strong intrest in innovation and engineering solutions, so naturally I am very interested in <em>Artificial Intelligence and Machine Learning</em>. Read more on my intrest in ML/AI <a href= "/coming-soon" >here</a>. </li>
-    <li>Additioanlly with my background in econometrics, I enjoy analyzing the world in a "bigger picture" way by asking difficult questions. </li>
+    <li>I have a very strong interest in innovation and engineering solutions, so naturally I am very interested in <em>Artificial Intelligence and Machine Learning</em>. Read more on my interest  in ML/AI <a href= "/coming-soon" >here</a>. </li>
+    <li>Additionally with my background in econometrics, I enjoy analyzing the world in a "bigger picture" way by asking difficult questions. </li>
   </ul>
   <ul>
   <h4>Passions:</h4>
     <li><em>Learning</em> is one of my biggest passions- I live for the feeling of my worldview completely changing with new information. With each nuance, I aim to understand the world around me to the fullest extent.</li>
-    <li>On the more personal side, I enjoy watching and anlyzing basketball (Go Clippers!), optimizing my skincare routine, and playing various video games (see the pokeball toggle and slowpoke above).</li>
+    <li>On the more personal side, I enjoy watching and analyzing basketball (Go Clippers!), optimizing my skincare routine, and playing various video games (see the pokeball toggle and slowpoke above).</li>
   </ul>
 </ul>
 </div>
