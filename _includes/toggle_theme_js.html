@@ -1,12 +1,12 @@
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', () => {
     const button = document.querySelector('.theme-toggle');
-    let currentTheme = localStorage.getItem('theme') || 'light'; // Default to light
+    let currentTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', currentTheme);
     updatePokeballImage(currentTheme);
     
     button.addEventListener('click', (event) => {
-      event.stopPropagation();  // Prevents event from bubbling up
+      event.stopPropagation();  
       currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', currentTheme);
       localStorage.setItem('theme', currentTheme);

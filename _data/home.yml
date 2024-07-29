@@ -10,9 +10,9 @@ navbar_entries:
     download: true
 
 project_entries:
-  - title: Bayesian Hierarchical Modeling of Housing Prices over Time
-    url: assets/files/STATS205P_Project.pdf
-    desc: Using data from FRED, since 1975. Completed in R with rstanram.
+  - title: "Analyzing Regional and National House Price Trends Over Time: A Bayesian Hierarchical Modeling Approach"
+    url: projects/BayesHousingPrices/
+    desc: Understanding the impact national housing prices have on regional housing prices by using a nested bayesian method as an economic indicator.
 
   - title: Effect of Zidovudine Regimens on CD4 Count over Time
     url: assets/files/STATS112_Project.pdf
