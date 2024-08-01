@@ -14,10 +14,10 @@ project_entries:
     url: projects/BayesHousingPrices/
     desc: Understanding the impact national housing prices have on regional housing prices by using a nested bayesian method as an economic indicator.
 
-  - title: Effect of Zidovudine Regimens on CD4 Count over Time
-    url: assets/files/STATS112_Project.pdf
-    desc: A comprehensive statistical analysis with  generalized linear mixed effects models to evaluate the impact of different Zidovudine treatment regimens on CD4 counts in AIDS patients over time.
-
+  - title: Measuring the Effect of Zidovudine Regimens on CD4 Count over Time
+    url: /projects/ZidovudineC4Count/
+    desc: Examining how the daily treatment with medication Zidovudine affects CD4 Counts in patients with AIDS. Conducted EDA, choose appropriate model, and preformed residual analysis.
+  
   - title: An Analysis of Student Body Size with California Public High School Data 
     url: coming-soon
     desc: Coming Soon!
