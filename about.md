@@ -7,7 +7,9 @@ permalink: /about/
 <div class="card">
 <div class="body">
 
-I began my data science journey in 2019 when I was first introduced to R during my statistics lecture. It sparked my curiosity and soon I began self-teaching myself and became fluent in R. Soon after, I taught myself Python. Today, I am well on my path into data science and, my curiosity still remains strong.
+I began my data science journey in 2019 when I was first introduced to R during my statistics lecture. My curiosity was sparked and soon I began self-teaching R. Soon after, I taught myself Python. That was just the start.
+<div></div>
+<br> Today, I am well on my path into data science and, my curiosity still remains strong.
 <div></div>
 <br> I'm a quick learner with experience in many areas such as Statistical Analysis, Cloud Computing, ETL, Signal Processing, and Research.
 <div></div>
@@ -18,7 +20,6 @@ I began my data science journey in 2019 when I was first introduced to R during 
 </div>
 [Download Resume](/assets/files/Serena_Alvarez_Resume.pdf){: class="download-button"}
 
-(P.S. If you would like to switch themes, click on the pokeball in the right corner!!)
 
 <style>
 .card .title {
@@ -36,7 +37,7 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <h1 class="title">Serena as a Data Scientist</h1>
 <div class="body">
 <ul>
-  If you ever asked "Who is Serena as a Data Scientist?", then this section is for you. 
+  If you ever wondered "Who is Serena as a Data Scientist?", then this section is for you. 
 </ul>
 
 <div class="card">
