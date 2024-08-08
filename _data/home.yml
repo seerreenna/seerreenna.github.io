@@ -18,7 +18,7 @@ project_entries:
     url: /projects/ZidovudineC4Count/
     desc: Examining how the daily treatment with medication Zidovudine affects CD4 Counts in patients with AIDS. Conducted EDA, choose appropriate model, and preformed residual analysis.
   
-  - title: An Analysis of Student Body Size with California Public High School Data 
+  - title: An Exploration of California Public High School Data 
     url: coming-soon
     desc: Coming Soon!
     highlight: WIP
@@ -27,15 +27,15 @@ project_entries:
 
 old_project_entries: 
   - title: Measuring the Impact of Text Summarization Before Topic Modeling on Travel Reviews
-    url: assets/files/CS275P_Project.pdf
-    desc: Undertsanding the impact of Summarization for the improvement of Topic Modeling using LDA. Completed in Python. 
+    url: /projects/LDATripAdvisor
+    desc: Understanding the impact of text summarization for the improvement of Topic Modeling using LDA; applied to Travel Reviews. 
 
   - title: Predicting Household Utility Usage with Generalized Boosted Regression Modeling (GBM)
-    url: assets/files/Econ128_Presentation.pdf
-    desc: Used Generalized Boosted Regression Modeling (GBM) to predict household energy usage based on demographic and consumption data.
+    url: /projects/GBMHouseholdUtility
+    desc: Using gradient boosting to predict and evaluate the effectiveness of energy conservation methods on household energy consumption.
 
 
-  - title: GTIN Master Matching for Foodservice Products using various AI Techniques
+  - title: GTIN Master Matching for Food Service Products using various AI Techniques
     url: coming-soon
     desc: Leveraging AI techniques for the matching of GTIN for foodservice products
     highlight: WIP, NEW

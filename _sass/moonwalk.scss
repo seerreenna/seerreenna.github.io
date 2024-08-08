@@ -90,11 +90,12 @@ img {
       --code-text: #9D174D;
       --share-text: #999;
       --subheading2: #FFB6C1;  /* Light Pink */
-      --subheading3: #FF69B4;  /* Hot Pink */
+      --subheading3: #b6c1ff;  /* Hot Pink */
       --subheading4: #FF1493;  /* Deep Pink */
       --subheading5: #FF85C0;  /* Soft Pink */
       --subheading6: #DB7093;  /* Pale Violet Red */
-      --subheading7: #FF00FF;  /* Magenta */
+      --subheading7: #FF69B4;
+      --titlesubheading: #b6c1ff;  /* Magenta */
   }
 }
 
@@ -115,7 +116,8 @@ img {
       --subheading4: #a3e000;  
       --subheading5: #FFD700;  
       --subheading6: #7FFF00;  
-      --subheading7: #FF4500;  
+      --subheading7: #e000a3;  
+      --titlesubheading: #a3e000; 
   };
 }
 
@@ -147,8 +149,12 @@ h5 {color: var(--subheading5);}
 h6 {color: var(--subheading6);}
 
 h7 {
-color: var(--subheading7);}
+color: var(--subheading7);
 
+
+
+
+}
 p, strong, b, em, small, li, hr, table, figcaption {
   color: var(--text);
   font-family: 'Courier Prime', Courier, monospace;

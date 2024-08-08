@@ -1,7 +1,7 @@
 ---
 layout: project
-title: "Example Project Title"
-overview: "Test Overvewu to see i d ti works"
+title: "Project Template"
+overview: "The template I will be using for my projects"
 ---
 
 ## Overview
