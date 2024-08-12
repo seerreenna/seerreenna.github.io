@@ -3,7 +3,7 @@ layout: project
 title: "Analyzing Regional and National House Price Trends Over Time: A Bayesian Hierarchical Modeling Approach"
 overview: "Understanding the impact national housing prices have on regional housing prices by using a nested bayesian method as an economic indicator."
 ---
-![Housing Prices](/assets/images/project/HousignOverlaid.png)
+![Housing Prices](/assets/images/project/HousingOverlaid.png)
 [View Project File](/assets/files/BayesHousingPrices.pdf){: class="download-button"}
 
 <div class="dashed"></div>
