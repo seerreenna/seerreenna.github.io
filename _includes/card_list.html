@@ -1,7 +1,7 @@
 <ul class="horizontal-list">
   {% for item in include.collection %}
 
-    <li class="card">
+    <li class="card animated-card">
       <a href="{{ item.url }}">
         <span class="header">
           {{ item.title }}
@@ -13,11 +13,18 @@
         </span>
 
         <hr />
+        
+        
 
         {% if item.desc != false %}
         <p class="body">
           {{ item.desc }}
         </p>
+        {% endif %}
+
+
+        {% if item.image %}
+        <img src="{{ item.image }}" alt="{{ item.title }}" />
         {% endif %}
       </a>
     </li>
