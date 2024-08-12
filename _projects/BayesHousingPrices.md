@@ -19,7 +19,7 @@ This project addresses a classical econometrics problem using a Bayesian approac
 
 
 ## Data Provenance
-The data was sourced from the Federal Reserve Economic Data (FRED). It is publically avalible for non-commercial use and offers clean and reliable datasets. We downloaded several data series including the average sales prices and median sales prices of houses sold for the Midwest, Northeast, South, and West Census Regions, and the United States as a whole, as well as the Consumer Price Index (CPI) for the United States. 
+The data was sourced from the Federal Reserve Economic Data (FRED). It is publicly available for non-commercial use and offers clean and reliable datasets. We downloaded several data series including the average sales prices and median sales prices of houses sold for the Midwest, Northeast, South, and West Census Regions, and the United States as a whole, as well as the Consumer Price Index (CPI) for the United States. 
 
 The data was pulled from FRED starting from 1975, and it was adjusted for inflation using CPI.
 
@@ -37,4 +37,4 @@ Our analysis showed that *Time* and *national housing prices* has a significant 
 
 
 ## Conclusion
-We have demonstrated that using an advanced techinique such as Bayesian hierarchical modeling can offer more information and contribute to a better economic indicator. Further application of these techniques should be considered in future modeling of economic phenomena.
+We have demonstrated that using an advanced technique such as Bayesian hierarchical modeling can offer more information and contribute to a better economic indicator. Further application of these techniques should be considered in future modeling of economic phenomena.
