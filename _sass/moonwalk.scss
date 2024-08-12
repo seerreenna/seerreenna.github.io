@@ -103,23 +103,23 @@ img {
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
   html, body  {
-      --headings: #f0166f;
-      --links: #16f097;
+      --headings: #b7143a;
+      --links: #14b791;
       --highlight: #FFECB2;
       --bg: #1f242A;
       --bg-secondary: #282d37;
-      --bg-alt: #1f2a2a;
+      --bg-alt: #1f242a;
       --text: #FFF;
-      --text-secondary: #fe91c9;
+      --text-secondary: #d37288;
       --code-text: #9D174D;
       --share-text: #C4C4C4;
-      --subheading2: #00A3E0; 
-      --subheading3: 	#e000a3;  
-      --subheading4: #a3e000;  
-      --subheading5: #FFD700;  
-      --subheading6: #7FFF00;  
-      --subheading7: #e000a3;  
-      --titlesubheading: #a3e000; 
+      --subheading2: #9e2c47 ; 
+      --subheading3: 	#b8e9de;  
+      --subheading4: #C4232B;  
+      --subheading5: #A8034B;  
+      --subheading6: #750234;  
+      --subheading7: #14b791;  
+      --titlesubheading: #b8e9de; 
   };
 }
 

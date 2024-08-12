@@ -22,17 +22,7 @@ I began my data science journey in 2019 when I was first introduced to R during 
 [Download Resume](/assets/files/Serena_Alvarez_Resume.pdf){: class="download-button"}
 
 
-<style>
-.card .title {
-   color: var(--headings);
-    text-align: center;
-    font-weight: bold;
-    position: static;
-    top: 0.5em;
-    left: 0.5em;
-    font-size: 2em;
-}
-</style>
+
 
 <div class="bigcard">
 <h1 class="title">Serena as a Data Scientist</h1>
