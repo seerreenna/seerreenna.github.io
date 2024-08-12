@@ -2,12 +2,14 @@
 layout: default
 ---
 
+
 <header>
   {% if site.theme_config.show_navbar == true %}
     {% include horizontal_list.html collection=site.data.home.navbar_entries %}
     <div class="dashed"></div>
   {% endif %}
  
+
 
   <h1 style="margin-bottom: 0;">{{ site.title }}
   <h3 style="margin-top: 0;" align="justify">{{ site.subtitle }}</h3></h1>
@@ -58,7 +60,15 @@ layout: default
 
 {% if site.theme_config.show_footer == true %}
   <footer>
-    <div class="dashed"></div>
-    {% include horizontal_list.html collection=site.data.home.footer_entries %}
-  </footer>
+    <div class="footer-container">
+      <div class="dashed"></div>
+      {% include horizontal_list.html collection=site.data.home.footer_entries %}
+      <div class="footer-image">
+        <img src="{{ site.baseurl }}/assets/images/logo_nobg.png" alt="Footer Image">
+      </div>
+  </div>
+</footer>
 {% endif %}
+
+
+
