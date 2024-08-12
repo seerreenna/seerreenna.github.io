@@ -9,6 +9,7 @@ navbar_entries:
     url: "/assets/files/Serena_Alvarez_Resume.pdf"
     download: true
 
+
 project_entries:
   - title: "Analyzing Regional and National House Price Trends Over Time: A Bayesian Hierarchical Modeling Approach"
     url: projects/BayesHousingPrices/
