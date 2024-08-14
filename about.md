@@ -30,7 +30,9 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <ul>
   If you ever wondered "Who is Serena as a Data Scientist?", then this section is for you. 
 </ul>
-
+<style>
+  
+</style>
 <div class="card">
 <h1 class="header">Tech Stack</h1>
 <div class="body">
