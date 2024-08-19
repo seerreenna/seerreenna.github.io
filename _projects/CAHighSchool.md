@@ -1,10 +1,9 @@
 ---
 layout: project
-title: "Project Template"
-overview: "The template I will be using for my projects"
+title: "An Exploration of California Public High School Data"
+overview: "Exploring the data of public 9-12 high schools in California to understand the connection between various factors and student population size."
 ---
-![Example Picture](/assets/images/logo_nobg.png)
-[View Project File](/assets/files/){: class="download-button"}
+
 
 <div class="dashed"></div>
 ## Overview

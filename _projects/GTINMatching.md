@@ -1,10 +1,9 @@
 ---
 layout: project
-title: "Project Template"
-overview: "The template I will be using for my projects"
+title: "GTIN Master Matching for Food Service Products using RAG Model"
+overview: "Leveraging RAG techniques for the matching of GTIN for food service products with unique IDS."
 ---
-![Example Picture](/assets/images/logo_nobg.png)
-[View Project File](/assets/files/){: class="download-button"}
+
 
 <div class="dashed"></div>
 ## Overview
