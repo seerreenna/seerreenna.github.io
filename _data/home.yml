@@ -41,11 +41,11 @@ old_project_entries:
     desc: Using gradient boosting to predict and evaluate the effectiveness of energy conservation methods on household energy consumption.
     image: /assets/images/project/ActualPredictedValues.png
 
-  - title: GTIN Master Matching for Food Service Products using RAG Model
-    url: /projects/GTINMatching
-    desc: Leveraging RAG techniques for the matching of GTIN for food service products with unique IDS.
-    highlight: WIP, NEW
-    image: 
+  - title: 'TravelAware: Your Commute Safety Assistant'
+    url: /projects/TravelAware
+    desc: A navigation app that integrates historical crime data with route planning to provide safer travel options through Los Angeles County.
+    highlight: NEW
+    image: /assets/images/project/TravelAware_UI.png
 
 
 old_project_entries_2:
