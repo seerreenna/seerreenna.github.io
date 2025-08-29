@@ -31,6 +31,12 @@ project_entries:
 
 
 old_project_entries: 
+  - title: 'TravelAware: Your Commute Safety Assistant'
+    url: /projects/TravelAware
+    desc: A navigation app that integrates historical crime data with route planning to provide safer travel options through Los Angeles County.
+    highlight: NEW
+    image: /assets/images/project/TravelAware_UI.png
+    
   - title: Measuring the Impact of Text Summarization Before Topic Modeling on Travel Reviews
     url: /projects/LDATripAdvisor
     desc: Understanding the impact of text summarization for the improvement of Topic Modeling using LDA; applied to Travel Reviews. 
