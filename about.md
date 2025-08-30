@@ -55,7 +55,7 @@ I began my data science journey in 2019 when I was first introduced to R during 
   </ul>
   <ul>
   <h4>Passions:</h4>
-    <li><em>Learning</em> is one of my biggest passions- I live for the feeling of my worldview completely changing with new information. With each nuance, I aim to understand the world around me to the fullest extent.</li>
+    <li><em>Learning</em> is one of my biggest passions- I live for the feeling of my worldview completely changing with new information. With every nuance, I aim to understand the world around me to an even greater extent.</li>
     <li>On the more personal side, I enjoy watching and analyzing basketball (Go Clippers!), optimizing my skincare routine, and playing various video games (see the pokeball toggle and slowpoke above).</li>
   </ul>
 </ul>
@@ -66,7 +66,7 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <h1 class="header">Education</h1>
 <div class="body">
 <ul>
-  <li><strong>Master's of Data Science</strong>, University of California, Irvine</li> <em>  Expected Dec 2024</em>
+  <li><strong>Master's of Data Science</strong>, University of California, Irvine</li> <em>  Dec 2024</em>
   <li><strong>B.A. Quantitative Economics</strong>, University of California, Irvine</li> <em>  Jun 2022</em>
 </ul>
 </div>
@@ -75,10 +75,11 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <div class="card">
 <h1 class="header">Experience</h1>
 <div class="body">
-<h4>Electronic Warfare Associates (EWA), Herndon, VA</h4>
+<h4>Electronic Warfare Associates (EWA), Herndon, VA [Remote]</h4>
 <ul>
-  <li><strong>R&D Intern, Machine Learning / AI</strong> (Jun 2022 - Jan 204)</li>
-  <li><strong>Graduate R&D Intern, Machine Learning / AI</strong> (Jan 2024 - Present)</li>
+  <li><strong>R&D Intern, Machine Learning / AI</strong> (Jun 2022 - Jul 2023)</li>
+  <li><strong>AI/ ML Scientist I, Machine Learning / AI</strong> (Jul 2023 - April 2025)</li>
+  <li><strong>AI/ ML Scientist II, Machine Learning / AI</strong> (April 2025 - Sep 2025)</li>
 </ul>
 </div>
 </div>
@@ -89,8 +90,8 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <h1 class="header">Leadership</h1>
 <div class="body">
 <ul>
-  <li><strong>MDS Program Ambassador</strong>: Act as an advocate for the MDS program in the Donald Bren School of Information and Computer Sciences. Aim to solidify program systems, activities, and standards by understanding the needs of the diverse student body. </li>
-  <li><strong>Co-Founder & Vice President, The Futurist Society at UCI</strong>: Compiled research for weekly discussions on the latest technological innovations. Led insightful debates on topics such as Quantum Computing, Circular Economies, and the Dyson Sphere.</li>
+  <li><strong>MDS Program Ambassador</strong>: Act as an advocate for the MDS program in the Donald Bren School of Information and Computer Sciences. Aim to solidify program systems, activities, and standards by understanding the needs of the diverse student body. (2023-2024)</li>
+  <li><strong>Co-Founder & Vice President, The Futurist Society at UCI</strong>: Compiled research for weekly discussions on the latest technological innovations. Led insightful debates on topics such as Quantum Computing, Circular Economies, and the Dyson Sphere.(2020-2022)</li>
 </ul>
 </div>
 </div>
