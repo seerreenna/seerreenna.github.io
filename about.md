@@ -10,9 +10,9 @@ permalink: /about/
 
 I began my data science journey in 2019 when I was first introduced to R during my statistics lecture. My curiosity was sparked and soon I began self-teaching R. Soon after, I taught myself Python. That was just the start.
 <div></div>
-<br> Today, I am well on my path into data science and, my curiosity still remains strong.
+<br> Today, I am a couple years into my career and growing every day.
 <div></div>
-<br> I'm a quick learner with experience in many areas such as Statistical Analysis, Cloud Computing, ETL, Signal Processing, and Research.
+<br> I'm a quick learner with experience in many areas such as Statistical Analysis, Cloud Computing, ETL, Machine Learning Modeling, Signal Processing, Parallel Processing and Research.
 <div></div>
 <br>Please feel free to check out my resume and an overview of my career as a data scientist below.
 
@@ -37,9 +37,14 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <h1 class="header">Tech Stack</h1>
 <div class="body">
 <ul>
-  <li><strong>Programming</strong>: Python, R, SQL</li>
-  <li><strong>Tools</strong>: TensorFlow, Pytorch, Docker, Git/Github, Apache Spark, GCP</li>
-  <li><strong>Analysis</strong>: Time Series Analysis, Econometric Analysis, Bayesian Analysis</li>
+  <li><strong>Programming</strong>: Python, R, Matlab, MySQL, C++</li>
+  <li><strong>Packages</strong>: Pytorch, Tensorflow, Scikit-Learn, Dask, PySpark</li>
+  <li><strong>Tools</strong>: Docker, Git/Github, GCP</li>
+  <li><strong>MLOps</strong>: ClearML, MLFlow</li>
+  <li><strong>Machine Learning</strong>: Contrastive Learning, Reinforcement Learning, One-shot learning</li>
+  <li><strong>Distributed Computing</strong>: Dask, Coiled, Apache Spark</li>
+  <li><strong>Data Engineering</strong>: Apache Airflow, Apache Spark</li>
+  <li><strong>Analysis</strong>: Time Series, Econometric, Bayesian, Signal Processing</li>
 </ul>
 </div>
 </div>
@@ -50,8 +55,8 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <ul>
   <h4>Interests: </h4>
   <ul>
-    <li>I have a very strong interest in innovation and engineering solutions, so naturally I am very interested in <em>Artificial Intelligence and Machine Learning</em>. Read more on my interest  in ML/AI <a href= "/coming-soon" >here</a>. </li>
-    <li>Additionally with my background in econometrics, I enjoy analyzing the world in a "bigger picture" way by asking difficult questions. </li>
+    <li>I have a very strong interest in innovation and engineering solutions, so naturally I am very interested in <em>Artificial Intelligence and Machine Learning</em>. Read more on my interest in ML/AI <a href= "/coming-soon" >here</a>. </li>
+    <li>Additionally with my background in econometrics, I enjoy analyzing the world in a "bigger picture" perspective by asking difficult questions. </li>
   </ul>
   <ul>
   <h4>Passions:</h4>
@@ -77,9 +82,9 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <div class="body">
 <h4>Electronic Warfare Associates (EWA), Herndon, VA [Remote]</h4>
 <ul>
-  <li><strong>R&D Intern, Machine Learning / AI</strong> (Jun 2022 - Jul 2023)</li>
-  <li><strong>AI/ ML Scientist I, Machine Learning / AI</strong> (Jul 2023 - April 2025)</li>
-  <li><strong>AI/ ML Scientist II, Machine Learning / AI</strong> (April 2025 - Sep 2025)</li>
+  <li><strong>R&D Intern, Artificial Intelligence/ Machine Learning</strong> (Jun 2022 - Jul 2023)</li>
+  <li><strong>AI/ ML Scientist I</strong> (Jul 2023 - April 2025)</li>
+  <li><strong>AI/ ML Scientist II</strong> (April 2025 - Sep 2025)</li>
 </ul>
 </div>
 </div>
