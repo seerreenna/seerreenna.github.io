@@ -3,7 +3,7 @@ subtitle: Data Scientist
 author: Serena Alvarez
 #url: https://www.abhinavsaxena.com/moonwalk # root address of the site
 description: > # description of the site (multiple lines allowed)
-  Hi! I'm Serena, a Data Scientist based in Irvine, CA with experience in the Defense, Technology, and Food Distribution industries. I enjoy piecing together small bits of information to gain a better perspective on the world at large. My favorite areas to analyze are Technology, Sports, and International Relations.
+  Hi! I'm Serena, a Data Scientist based in Irvine, CA with over three years of experience in the tech industry. I enjoy piecing together small bits of information to gain a better perspective of the world at large. I hope to use my insights to engineer something that makes a meaningful change!
 
   Check out my projects below or my blog in the navigation bar above!  
 permalink: /:slug
@@ -38,7 +38,7 @@ theme_config:
   # options for "home" page
   home:
     title_projects: Data Analysis & Exploration
-    title_old_projects: AI/ Machine Learning Modeling
+    title_old_projects: AI/ Machine Learning
     title_old_projects2: Data Engineering & Tooling
     title_misc_list: Miscellaneous
     title_blog: Blog
