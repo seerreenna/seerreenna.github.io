@@ -10,9 +10,9 @@ permalink: /about/
 
 I began my data science journey in 2019 when I was first introduced to R during my statistics lecture. My curiosity was sparked and soon I began self-teaching R. Soon after, I taught myself Python. That was just the start.
 <div></div>
-<br> Today, I am a couple years into my career and growing every day.
+<br> Today, I am a couple years into my career and still as curious and hungry as ever.
 <div></div>
-<br> I'm a quick learner with experience in many areas such as Statistical Analysis, Cloud Computing, ETL, Machine Learning Modeling, Signal Processing, Parallel Processing and Research.
+<br> I'm a quick learner with experience in many areas such as Statistical Analysis, Cloud Computing, ETL, Machine Learning Modeling, Signal Processing, Distributed Computing, and Research.
 <div></div>
 <br>Please feel free to check out my resume and an overview of my career as a data scientist below.
 
@@ -39,7 +39,7 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <ul>
   <li><strong>Programming</strong>: Python, R, Matlab, MySQL, C++</li>
   <li><strong>Packages</strong>: Pytorch, Tensorflow, Scikit-Learn, Dask, PySpark</li>
-  <li><strong>Tools</strong>: Docker, Git/Github, GCP</li>
+  <li><strong>Tools</strong>: Docker, Git/Github, GCP, Angular</li>
   <li><strong>MLOps</strong>: ClearML, MLFlow</li>
   <li><strong>Machine Learning</strong>: Contrastive Learning, Reinforcement Learning, One-shot learning</li>
   <li><strong>Distributed Computing</strong>: Dask, Coiled, Apache Spark</li>
@@ -71,8 +71,8 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <h1 class="header">Education</h1>
 <div class="body">
 <ul>
-  <li><strong>Master's of Data Science</strong>, University of California, Irvine</li> <em>  Dec 2024</em>
-  <li><strong>B.A. Quantitative Economics</strong>, University of California, Irvine</li> <em>  Jun 2022</em>
+  <li><strong>Master of Data Science</strong>, University of California, Irvine</li> <em>  Dec 2024</em>
+  <li><strong>B.A. Quantitative Economics </strong>, University of California, Irvine</li> <em>  Jun 2022</em>
 </ul>
 </div>
 </div>
@@ -82,9 +82,9 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <div class="body">
 <h4>Electronic Warfare Associates (EWA), Herndon, VA [Remote]</h4>
 <ul>
-  <li><strong>R&D Intern, Artificial Intelligence/ Machine Learning</strong> (Jun 2022 - Jul 2023)</li>
-  <li><strong>AI/ ML Scientist I</strong> (Jul 2023 - April 2025)</li>
   <li><strong>AI/ ML Scientist II</strong> (April 2025 - Sep 2025)</li>
+  <li><strong>AI/ ML Scientist I</strong> (Jul 2023 - April 2025)</li>
+  <li><strong>R&D Intern, Artificial Intelligence/ Machine Learning</strong> (Jun 2022 - Jul 2023)</li>
 </ul>
 </div>
 </div>
@@ -94,8 +94,9 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <div class="card">
 <h1 class="header">Leadership</h1>
 <div class="body">
+<h4>University of California, Irvine</h4>
 <ul>
-  <li><strong>MDS Program Ambassador</strong>: Act as an advocate for the MDS program in the Donald Bren School of Information and Computer Sciences. Aim to solidify program systems, activities, and standards by understanding the needs of the diverse student body. (2023-2024)</li>
+  <li><strong>MDS Program Ambassador, Donald Bren School of Information and Computer Science</strong>: Act as an advocate for the MDS program in the Donald Bren School of Information and Computer Sciences. Aim to solidify program systems, activities, and standards by understanding the needs of the diverse student body. (2023-2024)</li>
   <li><strong>Co-Founder & Vice President, The Futurist Society at UCI</strong>: Compiled research for weekly discussions on the latest technological innovations. Led insightful debates on topics such as Quantum Computing, Circular Economies, and the Dyson Sphere.(2020-2022)</li>
 </ul>
 </div>
@@ -106,11 +107,6 @@ I began my data science journey in 2019 when I was first introduced to R during 
 </div>
 </div>
 
-# Contact Information & Inquiries  
-Email: [Personal](mailto:serenaealvarez@gmail.com), [School](mailto:sealvare@uci.edu)
-
-
-LinkedIn: [linkedin.com/in/serenaealvarez](https://www.linkedin.com/in/serenaealvarez)
 
 
 <footer>
