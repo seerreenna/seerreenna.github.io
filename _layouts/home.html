@@ -29,8 +29,15 @@ layout: default
       </div>
     {% endif %}
   </div>
-
- <div class="home-text" >Check out some of my projects below or <a href="/blog" target="_self">my blog</a>!</div>
+  <div class="home-text">
+    Check out my latest post: 
+    {% if site.posts.size > 0 %}
+      {% assign latest_post = site.posts.first %}
+      <a href="{{ latest_post.url | relative_url }}"><strong>{{ latest_post.title }}</strong></a>, 
+    {% endif %}
+    or explore the rest of <a href="/blog" target="_self"> my blog posts</a> and projects below!
+  </div>
+ 
 </header>
 
 {{ content }}
