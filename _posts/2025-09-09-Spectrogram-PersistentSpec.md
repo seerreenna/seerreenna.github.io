@@ -7,32 +7,32 @@ tags: [DSP,RF,"signal processing"]
 ![MAIN Photo](/assets/posts/spectrograms_persistence/persistence_spec.png)
 *A Persistence Spectrum Visualization of background RF noise*
 
-Radio frequency signal analysis in Python should be straightforward, but it's not. While Python is great at machine learning, it lacks the advanced spectral analysis tools that MATLAB provides out-of-the-box functions for, with the most glaring missing piece: the persistent spectrum.
+Radio frequency signal analysis in Python should be straightforward, but it's not. While Python is great at machine learning, it lacks the signal analysis tools that MATLAB provides out-of-the-box functions for, with the most obvious missing piece: the persistent spectrum.
 
-Standard Python libraries offer basic PSD (`scipy.signal.welch`) and spectrogram (`scipy.signal.spectrogram`) functions, but they're missing a major capability: **persistent spectrum analysis**. This visualization technique reveals weak, intermittent signals that traditional methods completely miss and is absolutely crucial for signal analysis.
+Standard Python libraries offer basic PSD (`scipy.signal.welch`) and spectrogram (`scipy.signal.spectrogram`) functions, but they're missing a huge capability: **persistent spectrum analysis**. This visualization technique reveals weak, intermittent signals that traditional methods completely miss and is absolutely crucial for signal analysis.
 
-This tutorial fills that gap by implementing persistent spectrum analysis in Python and bringing this MATLAB capability to the ML/Python community.
+This tutorial fills that gap by implementing persistent spectrum analysis in Python and bringing this to the ML/Python community.
 
 ## The Problem: Hidden Signals in RF Data
 
 When analyzing RF signals, we often need to detect weaker signals that appear sporadically against stronger background signals. The traditional spectral analysis visualizations struggle with this because:
 
-**Power Spectral Density (PSD)** averages power across the entire recording duration. When a weak signal apperas only for a short time, it gets diluted by all the time periods where it's absent. This results in the weaker signal not showing up at all.
+**Power Spectral Density (PSD)** averages power across the entire recording duration. When a weak signal appears only for a short time, it gets diluted by all the time periods where it's absent. This results in the weaker signal not showing up at all.
 
-**Spectrograms** show the time-frequency content but display signals at similar intensity whether they appear constantly or just occasionally. Weaker, non constant signals become easy to overlook against background noise. The weaker signals do show up but are often small and can be missed at a glance.
+**Spectrograms** show the time-frequency content but display signals at similar intensity whether they appear constantly or just occasionally. Weaker, non constant signals become easy to overlook against background noise. The weaker signals show up but are often small and are missed at a glance.
 
-We need is a way to see not just when frequencies occur, but **how consistently they occur** at different power levels. 
+What we need is a way to see not just when frequencies occur, but **how consistently they occur** at different power levels. 
 
-This is exactly why we need a persistent spectrum and unfortunately, Python's standard libraries lack that.
+This is exactly why we need a persistent spectrum and unfortunately, Python's standard libraries do not include this functionality.
 
 ## Persistent Spectrum in Python
 
-To show why persistent spectrum analysis matters, I'll use a test signal from this [MATLAB document](https://www.mathworks.com/help/signal/ref/pspectrum.html#mw_a04ca567-c713-4ab1-8a36-94f11eb21e78) that combines:
+To show why persistent spectrum is such an important feature, I'll use a test signal from this [MATLAB document](https://www.mathworks.com/help/signal/ref/pspectrum.html#mw_a04ca567-c713-4ab1-8a36-94f11eb21e78) that combines:
 
-- A **chirp signal** (frequency sweep from 180-220 Hz) with noise, a stronger signal that is very visible
-- A **weak 210 Hz tone** that appears only in the first 1/6 of the recording, a weaker signal that is embedded inside of the stronger one
+- A **chirp signal** (frequency sweep from 180-220 Hz) with noise; a stronger signal that is very visible
+- A **weak 210 Hz tone** that appears only in the first 1/6 of the recording; a weaker signal that is embedded inside of the stronger one
 
-This is a classic signal detection problem where we attempt to identify a sparser signal against the background of stronger signal and noise.
+This is a classic problem in signal detection where we attempt to identify a sparser signal against the background of stronger signal and noise.
 
 
 ```python
@@ -53,9 +53,13 @@ Below is the implementation of what the example signal looks like plotted like a
 ![EXAMPLE SIGNAL](/assets/posts/spectrograms_persistence/MATLAB-example.png)
 
 
-As we can see, the smaller signal is embedded inside the larger signal. Note how the weak signal is barely visible in the spectrogram but clearly revealed in the persistent spectrum.
+As we can see, the smaller signal is embedded inside the larger signal. Note how the weak signal is barely visible in the spectrogram but clearly revealed in the persistent spectrum. 
+
+For situations like these, using a spectrogram alone would not be sufficient and would miss the weaker signal entirely. 
 
 ### Python Stock Functions for Signal Analysis
+
+Python offers several built in functions in common packages for signal processing which I will go over here.
 
 #### PSD Implementations
 For plotting a PSD in Matplotlib, there is a built in function `matplotlib.pyplot.psd()` that can be used as follows:
@@ -207,7 +211,7 @@ def generate_stft(x, fs, nfft, noverlap, plot=True):
 ```
 
 #### Persistence Spectrum
- We can think of the Persistence Spectrum as a sort of Histogram on the results of the SFTF. So Xiao's implementation basically plots the result of the sftf as a histogram and that is how we do that here:
+ We can think of the Persistence Spectrum as a sort of Histogram on the results of the SFTF. So, Xiao's implementation basically plots the result of the SFTF as a histogram:
 
 ``` python
 def generate_pspectrum(x, fs, nfft, noverlap, nbins, plot=True):
@@ -259,15 +263,16 @@ pspectrum = generate_pspectrum(x, fs=1000, nfft=1024, noverlap=782, nbins=256)
 ```
 ![Python implementation](/assets/posts/spectrograms_persistence/python-example.png)
 
-The difference is clear:
+The need is clear:
 
-Custom Spectrogram: Both signals are visible, but the weak 210 Hz tone appears as a faint horizontal line
-Persistent Spectrum: The weak signal now appears as a bright vertical feature at 210 Hz. This is very hard to miss!
+With the Custom Spectrogram, Both signals are visible, but the weak 210 Hz tone appears as a faint horizontal line.
+
+However with the Persistent Spectru, the weak signal now appears as a bright vertical feature at 210 Hz. This is very hard to miss!
 
 This allows us to not only when frequencies occur but also now how often.
 
 ## Conclusion
 
-By implementing persistent spectrum analysis in Python, we've solved a real limitation in the open-source signal processing space. While Python excels at machine learning and general computation, there was no easy way to use this visualization technique that's essential for detecting weak, intermittent RF signals.
+By implementing persistent spectrum analysis in Python, we've solved a limitation in the open-source signal processing space. While Python excels at machine learning, there was no easy way to use this visualization technique that's essential for detecting weak, intermittent RF signals.
 
-This implementation enables Python users to tackle advanced signal detection without relying on MATLAB.
+This implementation allows Python users to tackle advanced signal detection without relying on MATLAB and apply advanced ML techniques in the signal processing domain. 
