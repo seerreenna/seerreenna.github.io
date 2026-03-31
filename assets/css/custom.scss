@@ -1,190 +1,104 @@
 ---
 ---
-.projects-container {
-    margin: 20px 0;
-  }
-  
-  .project-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .project-card {
-    width: calc(33.333% - 20px); // Adjust based on desired margins and total width
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    background: white;
-    text-align: center;
-    display: inline-block; // Ensure this is not overridden to be something else
-  }
-  
 
-
-.download-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 0;
-    background-color: #fea1d1; 
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.download-btn:hover {
-    background-color: #fe46a5; 
+.download-button {
+  display: block;
+  padding: 5px 10px;
+  margin: 5px 0;
+  background-color: var(--subheading7);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .home-image {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .home-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-.home-profile-image {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    display: block;
-    margin: 10px auto;  
-    border: 3px solid #f2f2f2;  
-  }
-  
+  text-align: center;
+  margin: 20px 0;
+}
 
+img.heart-shape {
+  width: 300px;
+  height: 300px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+  mask-border: var(--_m);
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  display: block;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+@supports not (-webkit-mask-box-image: var(--_m)) {
   img.heart-shape {
-    width: 300px;  
-    height: 300px; 
-    aspect-ratio: 1;
-    object-fit: cover;
-    --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
-    -webkit-mask-box-image: var(--_m);
-    mask-border: var(--_m);
-    clip-path: polygon(-41% 0,50% 91%, 141% 0);
-    display: block;  
-    margin: 0 auto; 
+    --_m:
+      radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
+      radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
+      linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
   }
-  
-  @supports not (-webkit-mask-box-image: var(--_m)) { 
-    img.heart-shape {
-      --_m:
-        radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
-        radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
-        linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
-      -webkit-mask: var(--_m);
-      mask: var(--_m);
-    }
-  }
+}
 
-  .card {
-    padding: 1em;
-    border: 1px var(--text) solid;
-    width: calc(100% - 2em);
-    max-width: 100%;
-    height: fit-content;
-    font-size: 1em;
-    align-items: center;
-    background-color: var(--bg-secondary);
-    margin-bottom: 0.8em;
-    border-radius: 0.5em;
+.heart-profile-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 25px;
+  object-fit: cover;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid var(--text);
+}
 
-  }
-  
-  .card .header {
-    color: var(--links);
-    text-align: left;
-    font-weight: bold;
-    position: static;
-    top: 0.5em;
-    left: 0.5em;
-    font-size: 1.5em;
-  }
-  
-  .card .body {
-    font-size: 1em;
-    text-align: left;
-  }
-  
-  .card hr {
-    display: none;
-  }
-  
-  .card ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .card {
-      width: calc(100% - 2em);
-      display: block;
-      margin-bottom: 2em;
-      margin-left: auto;
-      margin-right: auto;
-      a, .header {
-        font-size: 1em;
-      }
-    }
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1em;
-  }
-  
-  .download-button {
-    display: block;
-    padding: 5px 10px;
-    margin: 5px 0;
-    background-color: var(--subheading7);
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  img.heart-shape {
-    width: 300px;
-    height: 300px;
-    aspect-ratio: 1;
-    object-fit: cover;
-
-    display: block;
-    margin: 0 auto;
-    transition: all 0.3s ease;
-  }
-  
-  img.heart-shape:hover {
-    content: url(/assets/images/fav_poke.png);
-  }
-
-  .heart-profile-image {
-    width: 400px; 
-    height: 400px; 
-    border-radius: 25px; 
-    object-fit: cover; 
-    display: block;
-    margin: 10px auto;  
-    border: 1px solid var(--text);  
-  }
-
-img.heart-profile-image:hover{
+img.heart-profile-image:hover {
   content: url(/assets/images/fav_poke.png);
 }
 
+.bigcard .card {
+  padding: 1em;
+  border: 1px var(--text) solid;
+  width: calc(100% - 2em);
+  max-width: 100%;
+  height: fit-content;
+  font-size: 1em;
+  background-color: var(--bg-secondary);
+  margin-bottom: 0.8em;
+  border-radius: 0.5em;
 
+  .header {
+    color: var(--links);
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
 
+  .body {
+    font-size: 1em;
+    text-align: left;
+  }
 
+  hr {
+    display: none;
+  }
 
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .bigcard .card {
+    display: block;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
 
+    a, .header {
+      font-size: 1em;
+    }
+  }
+}

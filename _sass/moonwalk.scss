@@ -168,7 +168,7 @@ p, strong, b, em, small, li, hr, table, figcaption {
 
 blockquote {
   background-color: var(--bg-secondary);
-  border: 1px var(--border) solid;
+  border: 1px var(--text) solid;
   font-family: 'Courier Prime', Courier, monospace;
 }
 
@@ -249,7 +249,7 @@ mark {
 p code, li code {
   background-color: var(--bg-secondary);
   padding: 0.2rem;
-  color: var (--code-text);
+  color: var(--code-text);
   font-weight: bold;
   font-family: 'Courier Prime', Courier, monospace;
 }
@@ -264,19 +264,19 @@ p code, li code {
 
 .credits {
   font-size: 0.8em;
-  color: var (--text);
+  color: var(--text);
   margin: 8em auto -4em auto;
   text-align: center;
   font-family: 'Courier Prime', Courier, monospace;
 
   a {
-    color: var (--text);
+    color: var(--text);
     text-decoration: none;
     font-weight: bold;
   }
 
   a:hover {
-    color: var (--links);
+    color: var(--links);
   }
 }
 
@@ -286,7 +286,7 @@ p code, li code {
   padding: 0.4em 1em;
   margin-right: 0.5em;
   border-radius: 1em;
-  background-color: var (--bg-secondary);
+  background-color: var(--bg-secondary);
   font-size: 0.7em;
   font-weight: bold;
   text-transform: lowercase;

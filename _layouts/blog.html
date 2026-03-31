@@ -4,12 +4,10 @@ layout: default
 <a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
 
 <header>
-  <h1>&#x2765 My Blog Posts<h3 style="margin-top: 0;" align="justify">Updated as I learn more about the world...</h3></h1>
+  <h1>&#x2765 My Blog Posts</h1>
+  <h3>Updated as I learn more about the world...</h3>
 
 </header>
 
 {% include post_list.html %}
-<footer>
-  <div class="dashed"></div>
-  {% include horizontal_list.html collection=site.data.home.footer_entries %}
-</footer>
+{% include footer.html show_logo=true %}
