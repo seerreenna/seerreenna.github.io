@@ -11,16 +11,12 @@ layout: default
  
 
 
-  <h1 style="margin-bottom: 0;">{{ site.title }}
-  <h3 style="margin-top: 0;" align="justify">{{ site.subtitle }}</h3></h1>
+  <h1>{{ site.title }}</h1>
+  <h3>{{ site.subtitle }}</h3>
   <div class="home-intro">
     <div class="home-text">
       {% if site.theme_config.show_description == true %}
-        <p>Hi! I'm <strong>Serena</strong>, a Data Scientist based in <strong>Irvine, CA</strong> with over three years of experience in the tech industry. I enjoy piecing together small bits of information to gain a better perspective of the world at large. I hope to use my insights to engineer something that makes a meaningful change!
-
-      
-          
-          
+        <p>Hi! I'm <strong>Serena</strong>, a Data Scientist based in <strong>Irvine, CA</strong> with over three years of experience in the tech industry. I enjoy piecing together small bits of information to gain a better perspective of the world at large. I hope to use my insights to engineer something that makes a meaningful change!</p>
       {% endif %}
     </div>
     {% if site.data.home.image %}
@@ -35,7 +31,7 @@ layout: default
       {% assign latest_post = site.posts.first %}
       <a href="{{ latest_post.url | relative_url }}"><strong>{{ latest_post.title }}</strong></a>, 
     {% endif %}
-    or explore the rest of <a href="/blog" target="_self"> my blog posts</a> and projects below!
+    or explore the rest of <a href="/blog">my blog posts</a> and projects below!
   </div>
  
 </header>
@@ -71,15 +67,7 @@ layout: default
 {% endif %}
 
 {% if site.theme_config.show_footer == true %}
-  <footer>
-    <div class="footer-container">
-      <div class="dashed"></div>
-      {% include horizontal_list.html collection=site.data.home.footer_entries %}
-      <div class="footer-image">
-        <img src="{{ site.baseurl }}/assets/images/logo_nobg.png" alt="Footer Image">
-      </div>
-  </div>
-</footer>
+  {% include footer.html show_logo=true %}
 {% endif %}
 
 

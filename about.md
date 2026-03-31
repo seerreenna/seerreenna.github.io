@@ -27,12 +27,7 @@ I began my data science journey in 2019 when I was first introduced to R during 
 <div class="bigcard">
 <h1 class="title">Serena as a Data Scientist</h1>
 <div class="body">
-<ul>
-  If you ever wondered "Who is Serena as a Data Scientist?", then this section is for you. 
-</ul>
-<style>
-  
-</style>
+<p>If you ever wondered "Who is Serena as a Data Scientist?", then this section is for you.</p>
 <div class="card">
 <h1 class="header">Tech Stack</h1>
 <div class="body">
@@ -109,7 +104,3 @@ I began my data science journey in 2019 when I was first introduced to R during 
 
 
 
-<footer>
-  <div class="dashed"></div>
-  {% include horizontal_list.html collection=site.data.home.footer_entries %}
-</footer>
