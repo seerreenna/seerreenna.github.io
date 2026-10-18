@@ -18,31 +18,6 @@
   margin: 20px 0;
 }
 
-img.heart-shape {
-  width: 300px;
-  height: 300px;
-  aspect-ratio: 1;
-  object-fit: cover;
-  --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
-  -webkit-mask-box-image: var(--_m);
-  mask-border: var(--_m);
-  clip-path: polygon(-41% 0,50% 91%, 141% 0);
-  display: block;
-  margin: 0 auto;
-  transition: all 0.3s ease;
-}
-
-@supports not (-webkit-mask-box-image: var(--_m)) {
-  img.heart-shape {
-    --_m:
-      radial-gradient(at 70% 31%,var(--c) 29%,#0000 30%),
-      radial-gradient(at 30% 31%,var(--c) 29%,#0000 30%),
-      linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
-    -webkit-mask: var(--_m);
-    mask: var(--_m);
-  }
-}
-
 .heart-profile-image {
   width: 400px;
   height: 400px;
@@ -54,7 +29,7 @@ img.heart-shape {
 }
 
 img.heart-profile-image:hover {
-  content: url(/assets/images/fav_poke.png);
+  content: url(/assets/images/fav_poke.webp);
 }
 
 .bigcard .card {

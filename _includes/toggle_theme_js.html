@@ -1,27 +1,35 @@
-<script type="text/javascript">
-  window.addEventListener('DOMContentLoaded', () => {
-    const button = document.querySelector('.theme-toggle');
-    let currentTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    updatePokeballImage(currentTheme);
-    
-    button.addEventListener('click', (event) => {
-      event.stopPropagation();  
-      currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', currentTheme);
-      localStorage.setItem('theme', currentTheme);
-      updatePokeballImage(currentTheme);
+<script>
+  // Runs in <head> so the saved/OS theme is applied before first paint.
+  // Order: saved choice > site.theme_config.appearance > OS prefers-color-scheme.
+  (function () {
+    var root = document.documentElement;
+    var media = window.matchMedia('(prefers-color-scheme: dark)');
+    var configured = "{{ site.theme_config.appearance | default: 'auto' }}";
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+
+    function resolve() {
+      if (saved === 'dark' || saved === 'light') return saved;
+      if (configured === 'dark' || configured === 'light') return configured;
+      return media.matches ? 'dark' : 'light';
+    }
+
+    root.setAttribute('data-theme', resolve());
+
+    // Follow OS changes until the visitor picks a theme themselves.
+    media.addEventListener('change', function () {
+      if (!saved) root.setAttribute('data-theme', resolve());
     });
 
-  });
-
-  function updatePokeballImage(theme) {
-    const pokeballImage = document.getElementById('pokeball-image');
-    if (theme === 'dark') {
-      pokeballImage.src = "{{ '/assets/images/dark-pokeball.png' | relative_url }}";
-    } else {
-      pokeballImage.src = "{{ '/assets/images/pink-pokeball.png' | relative_url }}";
-    }
-  }
+    window.addEventListener('DOMContentLoaded', function () {
+      var button = document.querySelector('.theme-toggle');
+      if (!button) return;
+      button.addEventListener('click', function (event) {
+        event.stopPropagation();
+        saved = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', saved);
+        try { localStorage.setItem('theme', saved); } catch (e) {}
+      });
+    });
+  })();
 </script>
-

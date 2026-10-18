@@ -4,7 +4,7 @@ title: "DSP: Python Implementation of Persistent Spectrum Analysis"
 permalink: /persistentspec/
 tags: [DSP,RF,"signal processing"]
 ---
-![MAIN Photo](/assets/posts/spectrograms_persistence/persistence_spec.png)
+![MAIN Photo](/assets/posts/spectrograms_persistence/persistence_spec.webp)
 *A Persistence Spectrum Visualization of background RF noise*
 
 Radio frequency signal analysis in Python should be straightforward, but it's not. While Python is great at machine learning, it lacks the signal analysis tools that MATLAB provides out-of-the-box functions for, with the most obvious missing piece: the persistent spectrum.
@@ -50,7 +50,7 @@ x[:idx] = x[:idx] + 0.05*np.cos(2*np.pi*t[:idx]*210)
 
 Below is the implementation of what the example signal looks like plotted like a spectrogram and a persistence spectrum in MATLAB. 
 
-![EXAMPLE SIGNAL](/assets/posts/spectrograms_persistence/MATLAB-example.png)
+![EXAMPLE SIGNAL](/assets/posts/spectrograms_persistence/MATLAB-example.webp)
 
 
 As we can see, the smaller signal is embedded inside the larger signal. Note how the weak signal is barely visible in the spectrogram but clearly revealed in the persistent spectrum. 
@@ -261,7 +261,7 @@ Now let's see our custom implementation reveal the hidden signal:
 stft = generate_stft(x, fs=1000, nfft=1024, noverlap=782, plot=True)
 pspectrum = generate_pspectrum(x, fs=1000, nfft=1024, noverlap=782, nbins=256)
 ```
-![Python implementation](/assets/posts/spectrograms_persistence/python-example.png)
+![Python implementation](/assets/posts/spectrograms_persistence/python-example.webp)
 
 The need is clear:
 

@@ -3,7 +3,7 @@ layout: project
 title: "Effect  of  Zidovudine  Regimens  on  CD4   Count  over  Time"
 overview: "Examining how the daily treatment with medication Zidovudine affects CD4 Counts in patients with AIDS. Conducted EDA, choose appropriate model, and preformed residual analysis."
 ---
-![Housing Prices](/assets/images/project/CD4Counts.png)
+![Housing Prices](/assets/images/project/CD4Counts.webp)
 [View Project File](/assets/files/CD4Count_AIDS.pdf){: class="download-button"}
 
 <div class="dashed"></div>
