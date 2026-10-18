@@ -3,7 +3,7 @@ layout: project
 title: "TravelAware: Your Commute Safety Assistant"
 overview: "A navigation application that integrates historical crime data with route planning to provide safer travel options through Los Angeles County. Uses demographic profiling and time-of-travel analysis to calculate risk scores and balance safety with efficiency in route recommendations."
 ---
-![TravelAware UI Example](/assets/images/project/TravelAware_UI.png)
+![TravelAware UI Example](/assets/images/project/TravelAware_UI.webp)
 [View Project File](/assets/files/TravelAware_Final_Report.pdf){: class="download-button"}
 Joint Effort with Pranav Agarwal, Sebastian Algharaballi-Yanow, David Assio, Satvik Bhatnagar, and Samar Vikas Save
 

@@ -14,13 +14,13 @@ project_entries:
   - title: "Analyzing Regional and National House Price Trends Over Time: A Bayesian Hierarchical Modeling Approach"
     url: projects/BayesHousingPrices/
     desc: Understanding the impact national housing prices have on regional housing prices by using a nested bayesian method as an economic indicator.
-    image: /assets/images/project/HousingOverlaid.png
+    image: /assets/images/project/HousingOverlaid.webp
 
 
   - title: Measuring the Effect of Zidovudine Regimens on CD4 Count over Time
     url: /projects/ZidovudineC4Count/
     desc: Examining how the daily treatment with medication Zidovudine affects CD4 Counts in patients with AIDS. Conducted EDA, choose appropriate model, and preformed residual analysis.
-    image: /assets/images/project/CD4Counts.png
+    image: /assets/images/project/CD4Counts.webp
 
   - title: An Exploration of California Public High School Data 
     url: /projects/CAHighSchool
@@ -35,17 +35,17 @@ old_project_entries:
     url: /projects/TravelAware
     desc: A navigation app that integrates historical crime data with route planning to provide safer travel options through Los Angeles County.
     highlight: NEW
-    image: /assets/images/project/TravelAware_UI.png
+    image: /assets/images/project/TravelAware_UI.webp
 
   - title: Measuring the Impact of Text Summarization Before Topic Modeling on Travel Reviews
     url: /projects/LDATripAdvisor
     desc: Understanding the impact of text summarization for the improvement of Topic Modeling using LDA; applied to Travel Reviews. 
-    image: /assets/images/project/Topic_diff.png
+    image: /assets/images/project/Topic_diff.webp
 
   - title: Predicting Household Utility Usage with Generalized Boosted Regression Modeling (GBM)
     url: /projects/GBMHouseholdUtility
     desc: Using gradient boosting to predict and evaluate the effectiveness of energy conservation methods on household energy consumption.
-    image: /assets/images/project/ActualPredictedValues.png
+    image: /assets/images/project/ActualPredictedValues.webp
 
 
 
@@ -81,4 +81,4 @@ footer_entries:
 
 
 
-image: assets/images/serena_pic.jpg
+image: assets/images/serena_pic.webp

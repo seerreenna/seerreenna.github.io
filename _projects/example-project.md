@@ -3,7 +3,7 @@ layout: project
 title: "Project Template"
 overview: "The template I will be using for my projects"
 ---
-![Example Picture](/assets/images/logo_nobg.png)
+![Example Picture](/assets/images/logo_nobg.webp)
 [View Project File](/assets/files/){: class="download-button"}
 
 <div class="dashed"></div>
