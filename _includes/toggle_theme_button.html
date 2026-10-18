@@ -1,33 +1,27 @@
-<button title="Toggle Theme" class="theme-toggle">
-  <img src="{{ '/assets/images/pokeball.png' | relative_url }}" alt="Toggle Theme" id="pokeball-image">
+{%- comment -%}
+  The pokeball image is controlled only by the CSS below, keyed on html[data-theme].
+  The JS in toggle_theme_js.html only flips data-theme.
+{%- endcomment -%}
+<button title="Toggle Theme" class="theme-toggle" aria-label="Toggle light/dark theme">
+  <img src="{{ '/assets/images/pink-pokeball.webp' | relative_url }}" alt="" id="pokeball-image" width="50" height="50">
 </button>
 <style>
 .theme-toggle {
   position: absolute;
   top: 0.5px;
   right: 0.5px;
-  width: 50px;  
-  height: 50px;  
+  width: 50px;
+  height: 50px;
   border: none;
   background: none;
   cursor: pointer;
   z-index: 1000;
 }
-
-.theme-toggle img {
-  width: 100%;
-  height: auto;
-}
-
-.theme-toggle:hover #pokeball-image {
-  content: url('{{ '/assets/images/pokeball.png' | relative_url }}');
-}
-
-[data-theme='dark'] #pokeball-image {
-  content: url('{{ '/assets/images/dark-pokeball.png' | relative_url }}');
-}
-
-[data-theme='light'] #pokeball-image {
-  content: url('{{ '/assets/images/pink-pokeball.png' | relative_url }}');
+.theme-toggle img { width: 100%; height: auto; }
+[data-theme='light'] #pokeball-image { content: url('{{ '/assets/images/pink-pokeball.webp' | relative_url }}'); }
+[data-theme='dark'] #pokeball-image { content: url('{{ '/assets/images/dark-pokeball.webp' | relative_url }}'); }
+.theme-toggle:hover #pokeball-image { content: url('{{ '/assets/images/pokeball.webp' | relative_url }}'); }
+@media (prefers-color-scheme: dark) {
+  [data-theme='auto'] #pokeball-image { content: url('{{ '/assets/images/dark-pokeball.webp' | relative_url }}'); }
 }
 </style>

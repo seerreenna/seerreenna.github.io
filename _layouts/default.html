@@ -10,7 +10,7 @@
         {% endif %}
         <div class="credits">
           {%- if site.theme_config.show_copyright == true -%}
-          &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{site.author}}
+          &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{ site.author.name | default: site.author }}
           &nbsp;
           
           •
@@ -20,13 +20,5 @@
         </div>
       </div>
     </main>
-
-    {%- if site.soopr -%}
-      {%- if site.soopr.publish_token and jekyll.environment == "production" -%}
-        <script async defer data-soopr-token="{{site.soopr.publish_token}}" src="https://sdk.soopr.co/soopr.js"></script>
-      {%- else -%}
-        <script async defer src="https://sdk.soopr.co/soopr.js"></script>
-      {%- endif -%}
-    {%- endif -%}
   </body>
 </html>

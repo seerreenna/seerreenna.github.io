@@ -42,11 +42,11 @@ This is a **Jekyll static site** (GitHub Pages portfolio) using the [Moonwalk th
 ### Configuration
 
 `_config.yml` controls the site globally. Key fields:
-- `title`, `tagline`, `author` — Site identity
-- `appearance` — `auto` / `light` / `dark`
-- `projects` / `blog_posts` / `reading_time` flags — Enable/disable homepage sections
+- `title`, `subtitle`, `author` (name + twitter) — Site identity
+- `theme_config.appearance` — `auto` / `light` / `dark` (auto follows the visitor's OS setting until they use the pokeball toggle)
+- `theme_config.show_*` flags — Enable/disable homepage sections
 - `collections.projects.permalink` — URL pattern for project pages
 
-### Theme
+### Theme and build
 
-The Moonwalk theme is pulled via `remote_theme: abhinavs/moonwalk` and specified in `moonwalk.gemspec`. Files in `_layouts/`, `_includes/`, and `_sass/` override the remote theme's defaults.
+The Moonwalk theme (github.com/abhinavs/moonwalk) is vendored: all layouts, includes and SCSS live in this repo, and there is no `remote_theme`. Dependencies come from the `github-pages` gem so local builds match what GitHub Pages runs. Images are WebP (except favicons and the `serena_pic.jpg` social-preview image). Repo-only files are kept off the live site by the `exclude:` list in `_config.yml`.

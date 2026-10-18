@@ -1,21 +1,25 @@
 title: Serena Elizabeth Alvarez ❀ 
 subtitle: Data Scientist
-author: Serena Alvarez
-#url: https://www.abhinavsaxena.com/moonwalk # root address of the site
+author:
+  name: Serena Alvarez
+  twitter: dataserenaa
+url: https://seerreenna.github.io # root address of the site
+repository: seerreenna/seerreenna.github.io # lets jekyll-github-metadata build locally
+baseurl: "" # user site, served from the domain root
 description: > # description of the site (multiple lines allowed)
   Hi! I'm Serena, a Data Scientist based in Irvine, CA with over three years of experience in the tech industry. I enjoy piecing together small bits of information to gain a better perspective of the world at large. I hope to use my insights to engineer something that makes a meaningful change!
 
   Check out my projects below or my blog in the navigation bar above!  
 permalink: /:slug
 
-favicon: "./logo.png" 
-
 twitter:
     username: dataserenaa 
     card: summary_large_image
 
-#theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
-remote_theme: abhinavs/moonwalk
+# Moonwalk theme (github.com/abhinavs/moonwalk) is vendored: every layout, include and
+# SCSS file it needs lives in this repo, so no remote_theme fetch is needed.
+# theme: null stops GitHub Pages from adding its default Primer theme.
+theme: null
 
 
 theme_config:
@@ -31,16 +35,12 @@ theme_config:
   show_projects: true # show projects as cards, add in _data/home.yml
   show_blog: true # show blog posts added in _posts
   show_old_projects: true
-  show_old_projects2: false # show old projects as cards, add in _data/home.yml
-  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
   show_reading_time: true # show number of words and reading time in the blog posts
   show_tags: false # show tags in a blog posts
   # options for "home" page
   home:
     title_projects: Data Analysis & Exploration
     title_old_projects: AI/ Machine Learning
-    title_old_projects2: Data Engineering & Tooling
-    title_misc_list: Miscellaneous
     title_blog: Blog
     
 collections:
@@ -48,19 +48,34 @@ collections:
     output: true
     permalink: /projects/:path/
 
-soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
-
 highlighter: rouge
 
 sass:
-  saas_dir: _saas
-  style: :compressed
+  sass_dir: _sass
+  style: compressed
 
 plugins:
   - jekyll-feed
-  - jekyll-soopr-seo-tag
+  - jekyll-seo-tag
 
+# Default social preview image (used by jekyll-seo-tag for og:image / twitter:image)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/serena_pic.jpg
 
-include:
-  - _data
+# Repo-only files that should not be published to the live site.
+# (_data is still read by templates; it is just no longer copied into _site.)
+exclude:
+  - CLAUDE.md
+  - README.md
+  - LICENSE.txt
+  - Gemfile
+  - Gemfile.lock
+  - bin/
+  - "*.code-workspace"
+  - vendor/
+  - .bundle/
+  - .jekyll-cache/
+  - node_modules/
